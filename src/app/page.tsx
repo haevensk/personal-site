@@ -19,8 +19,7 @@ export default function Home() {
 
   return (
     <div className={styles.wrapper}>
-        <span id="typed" className={styles.typed}>
-        </span>
+        <span id="typed" className={styles.typed} />
     </div>
   )
 }
