@@ -12,6 +12,7 @@ export default function Home() {
         strings: ["Engineer. Designer. Leader.", 'Student. Dreamer. Mentor.', 'Brother. Husband. Friend.'],
         typeSpeed: 90
       });
+
       setInitialLoad(true);
   }, [setInitialLoad, initialLoad]);
   return (
