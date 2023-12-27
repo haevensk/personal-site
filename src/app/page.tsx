@@ -19,9 +19,11 @@ export default function Home() {
 
   return (
     <>
+    <div style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '5rem'}}>
+        <span id="typed" className={styles.typed} />
+    </div>
       <div className={styles.wrapper}>
 
-          <span id="typed" className={styles.typed} />
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem'}}>
           <a href="https://github.com/Haeven" style={{color: 'blueviolet', cursor: 'pointer'}}>www.github/Haeven</a>
         </div>
