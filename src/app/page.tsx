@@ -23,7 +23,7 @@ export default function Home() {
 
           <span id="typed" className={styles.typed} />
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem'}}>
-          <a style={{color: 'blueviolet'}}>github.com/Haeven</a>
+          <a href="https://github.com/Haeven" style={{color: 'blueviolet', cursor: 'pointer'}}>www.github/Haeven</a>
         </div>
       </div>
     </>
