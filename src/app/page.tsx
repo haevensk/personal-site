@@ -20,6 +20,7 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
         <span id="typed" className={styles.typed} />
+        <a>github.com/Haeven</a>
     </div>
   )
 }
