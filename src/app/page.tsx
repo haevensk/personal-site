@@ -25,7 +25,7 @@ export default function Home() {
       <div className={styles.wrapper}>
 
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem'}}>
-          <a href="https://github.com/Haeven" style={{color: 'blueviolet', cursor: 'pointer'}}>www.github/Haeven</a>
+          <a href="https://github.com/Haeven" style={{color: 'blueviolet', cursor: 'pointer'}}>github.com/Haeven</a>
         </div>
       </div>
     </>
