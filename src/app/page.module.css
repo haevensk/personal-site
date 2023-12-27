@@ -106,3 +106,9 @@ opacity: 1;
 }
 }
 
+
+.githubStat {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
