@@ -18,10 +18,15 @@ export default function Home() {
   }, [setInitialLoad, initialLoad]);
 
   return (
-    <div className={styles.wrapper}>
-        <span id="typed" className={styles.typed} />
-        <a>github.com/Haeven</a>
-    </div>
+    <>
+      <div className={styles.wrapper}>
+
+          <span id="typed" className={styles.typed} />
+        <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem'}}>
+          <a style={{color: 'blueviolet'}}>github.com/Haeven</a>
+        </div>
+      </div>
+    </>
   )
 }
 
