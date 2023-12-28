@@ -28,7 +28,7 @@ export default function Home() {
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '10rem'}}>
           <a href="https://github.com/Haeven" style={{textAlign: 'center', color: '#008796', cursor: 'pointer'}}>github.com/Haeven</a>
           <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats1.svg" alt="me" width="467" height="195"/>
-          <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats2.svg" alt="me" width="467" height="195"/>
+          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats2.svg" alt="me" width="467" height="195"/> */}
           <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats3.svg" alt="me" width="467" height="195"/>
           {/* <h1>Projects</h1> */}
           <a href="https://github.com/Haeven" style={{textAlign: 'center', color: '#008796', cursor: 'pointer'}}>subhire.app</a>
