@@ -2,7 +2,6 @@
 import styles from './page.module.css'
 import Typed from 'typed.js';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   const [initialLoad, setInitialLoad] = useState(false);
