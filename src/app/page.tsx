@@ -20,12 +20,14 @@ export default function Home() {
 
   return (
     <>
-    <div style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '5rem'}}>
+    <div className={styles.typedContainer} style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '5rem'}}>
+      <span>
         <span id="typed" className={styles.typed} />
+      </span>
     </div>
       <div className={styles.wrapper}>
 
-        <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '10rem'}}>
+        <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '7rem'}}>
           <a target='0' href="/me.cv.pdf" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View my CV</a>
           <a target='0' href="https://github.com/Haeven" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View my GitHub</a>
           <a target='0' href="https://x.com/hvndevs" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow me on 𝕏</a>
