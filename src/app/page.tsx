@@ -30,7 +30,7 @@ export default function Home() {
           <a target='0' href="https://github.com/Haeven" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View my GitHub</a>
           <a target='0' href="https://x.com/hvndevs" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow my 𝕏</a>
           <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact Email</a>
-          <a target='0' href="sms:+16082082300" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact SMS</a>
+          <a target='0' href="sms:+16082082300?body=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact SMS</a>
           {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats1.svg" alt="me" width="467" height="195"/> */}
           {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats2.svg" alt="me" width="467" height="195"/> */}
           {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats3.svg" alt="me" width="467" height="195"/> */}
