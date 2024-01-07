@@ -33,8 +33,9 @@ export default function Home() {
           <a target='0' href="https://x.com/hvndevs" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow my 𝕏</a>
           <a target='0' href="haevendevs@gmail.com" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact Email</a>
           <a target='0' href="sms:+16082082300" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact SMS</a>
+          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats1.svg" alt="me" width="467" height="195"/> */}
+          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats2.svg" alt="me" width="467" height="195"/> */}
           {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats3.svg" alt="me" width="467" height="195"/> */}
-          {/* <h1>Projects</h1> */}
           {/* <a href="https://github.com/Haeven" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>subhire.app</a> */}
           {/* <Image sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="https://github-readme-streak-stats.herokuapp.com/?user=Haeven&theme=react&hide_border=true" alt="me" width="467" height="195"/>
           <Image sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="https://github-readme-stats.vercel.app/api/top-langs/?username=Haeven&theme=react&show_icons=true&hide_border=true&layout=compact" alt="me" width="467" height="195"/> */}
