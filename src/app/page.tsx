@@ -3,14 +3,12 @@ import styles from './page.module.css'
 import Typed from 'typed.js';
 
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
 import { useEffect, useState } from 'react';
 import { ReactImageCarouselViewer } from "react-image-carousel-viewer";
 import Image from 'next/image';
 import { animated } from '@react-spring/web'
 import TextTransition from './TextTransition';
 import Links from './links';
-import 'react-slideshow-image/dist/styles.css'
 
 export default function Home() {
   const [initialLoad, setInitialLoad] = useState(false);
