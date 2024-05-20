@@ -52,8 +52,8 @@ export default function Home() {
           {/* <Image src="/profile-pic.png" sizes="(max-width: 2000px) 10vw, 10vw" alt="me" width={312} height={312} style={{borderRadius: '300px', marginBottom: '3rem'}}/> */}
           <a target='0' href="https://github.com/Haeven" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View GitHub</a><br></br>
           <a target='0' href="https://x.com/hvndevs" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
-          <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact Email</a><br></br>
-          <a target='0' href="sms:+16082082300?body=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Contact SMS</a><br></br>
+          <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Send Email</a><br></br>
+          <a target='0' href="sms:+16082082300?body=👋%20Let%27s%20Connect!" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Send SMS</a><br></br>
         <p onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view recent work</p>
         </div>
 
