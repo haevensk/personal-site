@@ -26,17 +26,21 @@ export default function Home() {
 
       setInitialLoad(true);
   }, [setInitialLoad, initialLoad]);
-  const images = [{src: '/1.png'},
-    {src: '/2.png'},
-    {src: '/3.png'},
-    {src: '/4.png'},
-    {src: '/5.png'},
+  const images = [
     {src: '/6.png'},
+    {src: '/9.png'},
+    {src: '/5.png'},
+    {src: '/10.png'},
+    {src: '/11.png'},
+    {src: '/3.png'},
+  {src: '/4.png'},
+  {src: '/1.png'},
+    {src: '/2.png'},
+    
+    
     {src: '/7.png'},
     {src: '/8.png'},
-    {src: '/9.png'},
-    {src: '/0.png'},
-    {src: '/1.png'}
+    
   ];
   return (
     <>
