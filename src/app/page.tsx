@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react';
 import { ReactImageCarouselViewer } from "react-image-carousel-viewer";
 import Image from 'next/image';
 import { animated } from '@react-spring/web'
-import TextTransition from './TextTransition';
-import Links from './links';
+// import TextTransition from './TextTransition';
+// import Links from './links';
 
 export default function Home() {
   const [initialLoad, setInitialLoad] = useState(false);
