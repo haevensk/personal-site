@@ -112,3 +112,11 @@ opacity: 1;
   height: auto;
   max-width: 100%;
 }
+.hover-txt {
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+.hover-txt:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
