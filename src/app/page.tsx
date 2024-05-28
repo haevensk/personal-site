@@ -57,12 +57,12 @@ export default function Home() {
       <div className={styles.wrapper}>
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '3rem'}}>
           {/* <Image src="/profile-pic.png" sizes="(max-width: 2000px) 10vw, 10vw" alt="me" width={312} height={312} style={{borderRadius: '300px', marginBottom: '3rem'}}/> */}
-          <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View LinkedIn</a><br></br>
           <a target='0' href="https://github.com/Haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View GitHub</a><br></br>
-          <a target='0' href="https://x.com/hvndevs" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
+          <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View LinkedIn</a><br></br>
           <a target='0' href="https://www.instagram.com/haeven.kd" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Instagram</a><br></br>
-          <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Send Email</a><br></br>
-          <a target='0' href="sms:+16082082300?body=👋%20Let%27s%20Connect!" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Send SMS</a><br></br>
+          <a target='0' href="https://x.com/hvndevs" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
+          <a target='0' href="sms:+16082082300?body=👋%20Let%27s%20Connect!" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Text me!</a><br></br>
+          <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Email me!</a><br></br>
         <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view recent work</p>
         </div>
 
