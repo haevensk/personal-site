@@ -25,6 +25,14 @@ export default function Home() {
       setInitialLoad(true);
   }, [setInitialLoad, initialLoad]);
   const images = [
+    {src: '/7.png'},
+    {src: '/12.png'},
+    {src: '/13.png'},
+    {src: '/14.png'},
+    {src: '/15.png'},
+    {src: '/16.png'},
+    {src: '/17.png'},
+    {src: '/18.png'},
     {src: '/6.png'},
     {src: '/9.png'},
     {src: '/5.png'},
@@ -37,7 +45,6 @@ export default function Home() {
     {src: '/2.png'},
     
     
-    {src: '/7.png'},
     
   ];
   return (
