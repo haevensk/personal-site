@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 import { ReactImageCarouselViewer } from "react-image-carousel-viewer";
 import Image from 'next/image';
 import { animated } from '@react-spring/web'
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 // import TextTransition from './TextTransition';
 // import Links from './links';
 
@@ -47,6 +49,7 @@ export default function Home() {
     
     
   ];
+
   return (
     <>
     <div className={styles.typedContainer} style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '3rem'}}>
@@ -61,8 +64,12 @@ export default function Home() {
           <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>LinkedIn</a><br></br>
           <a target='0' href="https://www.instagram.com/haeven.kd" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Instagram</a><br></br>
           <a target='0' href="https://x.com/hvndevs" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
-          <a target='0' href="mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Email</a><br></br>
+
+          <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/AppBlock/index.tsx" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View Code</a><br></br>
         <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view recent work</p>
+        {/* <Link href="">
+        <p className={styles['hover-txt']} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view project code</p>
+        </Link> */}
         </div>
 
                 {/* {loopArray.map((i, indx)=> 
