@@ -60,12 +60,11 @@ export default function Home() {
       <div className={styles.wrapper}>
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '3rem'}}>
           {/* <Image src="/profile-pic.png" sizes="(max-width: 2000px) 10vw, 10vw" alt="me" width={312} height={312} style={{borderRadius: '300px', marginBottom: '3rem'}}/> */}
-          <a target='0' href="https://github.com/Haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>GitHub</a><br></br>
           <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>LinkedIn</a><br></br>
           <a target='0' href="https://www.instagram.com/haeven.kd" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Instagram</a><br></br>
           <a target='0' href="https://x.com/hvndevs" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
 
-          <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/AppBlock/index.tsx" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View Code</a><br></br>
+          <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/AppBlock/index.tsx" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View code</a><br></br>
         <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view recent work</p>
         {/* <Link href="">
         <p className={styles['hover-txt']} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view project code</p>
