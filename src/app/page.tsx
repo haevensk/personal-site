@@ -66,7 +66,7 @@ export default function Home() {
 
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/AppBlock/index.tsx" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View frontend code</a><br></br>
           <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View other code</a><br></br>
-        <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view recent work</p>
+        <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>View recent work</p>
         {/* <Link href="">
         <p className={styles['hover-txt']} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view project code</p>
         </Link> */}
