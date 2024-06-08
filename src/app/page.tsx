@@ -135,6 +135,7 @@ export default function Home() {
       style={{marginTop: '10rem'}}
       slidesPerView={1}
       navigation
+      zoom={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
