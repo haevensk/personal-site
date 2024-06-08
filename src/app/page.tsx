@@ -9,8 +9,21 @@ import Image from 'next/image';
 import { animated } from '@react-spring/web'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// Import Swiper React components
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css'
 // import TextTransition from './TextTransition';
 // import Links from './links';
 
@@ -114,8 +127,23 @@ export default function Home() {
         /> */}
         
       </div>
-                
-      {isOpen && <Carousel showArrows={true} useKeyboardArrows={true}>
+      {isOpen &&
+      <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+    {images.map(i => 
+      <SwiperSlide style={{textAlign: 'center'}}><img style={{maxHeight: '45rem', width: 'auto', maxWidth:'80%'}} key={i.src} src={i.src} /></SwiperSlide>
+    ) }
+    </Swiper>  }
+      {/* {isOpen && <Carousel showArrows={true} useKeyboardArrows={true}>
           
           {images.map(i => 
           <div className="slide">
@@ -123,7 +151,7 @@ export default function Home() {
           </div>
           ) }
   
-    </Carousel>}
+    </Carousel>} */}
     </>
   )
 }
