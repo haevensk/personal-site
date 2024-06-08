@@ -67,8 +67,6 @@ export default function Home() {
     {src: '/heropage-statistics_wireframe.png'},
     {src: '/blog-card.png'},
     {src: '/blog-card_horizontal.png'},
-    {src: '/more-articles.png'},
-    {src: '/more-articles_mobile.png'},
 
     {src: '/blog-footer.png'},
     
@@ -80,7 +78,6 @@ export default function Home() {
     {src: '/3.png'},
     {src: '/8.png'},
     {src: '/4.png'},
-    {src: '/1.png'},
     {src: '/2.png'},
     {src: '/7.png'},
     {src: '/12.png'},
