@@ -4,11 +4,9 @@ import Typed from 'typed.js';
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { ReactImageCarouselViewer } from "react-image-carousel-viewer";
 import Image from 'next/image';
 import { animated } from '@react-spring/web'
 import { useRouter } from 'next/router';
-import ModalImage from "react-modal-image";
 import Link from 'next/link';
 
 import { Navigation, Pagination, Scrollbar, A11y, Zoom } from 'swiper/modules';
