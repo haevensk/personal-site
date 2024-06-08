@@ -108,7 +108,7 @@ export default function Home() {
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View frontend code</a><br></br>
           <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View other code</a><br></br>
         <p className={styles['hover-txt']} onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
-        {isOpen && <p style={{color: '#D3D3D3', textAlign: 'center'}}>double-tap to zoom</p>}
+
         {/* <Link href="">
         <p className={styles['hover-txt']} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view project code</p>
         </Link> */}
@@ -131,7 +131,7 @@ export default function Home() {
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
       spaceBetween={50}
-      style={{marginTop: '10rem', position: 'relative', overflow: 'default'}}
+      style={{marginTop: '11rem', position: 'relative', overflow: 'default'}}
       slidesPerView={1}
       navigation
       zoom={true}
