@@ -49,7 +49,7 @@ export default function Home() {
     {src: '/onboarding.png'},
     {src: '/FAQ.png'},
     {src: '/our-process.png'},
-    {src: '/our-process_mobile.png'},
+    // {src: '/our-process_mobile.png'},
     {src: '/asset-statistics.png'},
     {src: '/recent-trades-desktop.png'},
     {src: '/recent-trades-mobile.png'},
