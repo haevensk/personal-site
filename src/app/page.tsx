@@ -119,7 +119,7 @@ export default function Home() {
           
           {images.map(i => 
           <div className="slide">
-            <img style={{maxHeight: '45rem', width: 'auto', maxWidth:'70%'}} key={i.src} src={i.src} />
+            <img style={{maxHeight: '45rem', width: 'auto', maxWidth:'80%'}} key={i.src} src={i.src} />
           </div>
           ) }
   
