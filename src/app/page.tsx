@@ -1,7 +1,7 @@
 'use client'
 import styles from './page.module.css'
 import Typed from 'typed.js';
-
+import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { ReactImageCarouselViewer } from "react-image-carousel-viewer";
@@ -9,6 +9,8 @@ import Image from 'next/image';
 import { animated } from '@react-spring/web'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import TextTransition from './TextTransition';
 // import Links from './links';
 
@@ -27,13 +29,36 @@ export default function Home() {
       setInitialLoad(true);
   }, [setInitialLoad, initialLoad]);
   const images = [
-    {src: '/12.png'},
-    {src: '/13.png'},
-    {src: '/14.png'},
-    {src: '/15.png'},
-    {src: '/16.png'},
-    {src: '/17.png'},
-    {src: '/18.png'},
+
+    {src: '/auctions.png'},
+    {src: '/wallet.png'},
+    {src: '/wallet_add-card.png'},
+    {src: '/onboarding.png'},
+    {src: '/FAQ.png'},
+    {src: '/our-process.png'},
+    {src: '/our-process_mobile.png'},
+    {src: '/asset-statistics.png'},
+    {src: '/recent-trades-desktop.png'},
+    {src: '/recent-trades-mobile.png'},
+    {src: '/asset_cardx2.png'},
+    {src: '/regular-shares_trade-form_wireframe.png'},
+    {src: '/order-summary.png'},
+    
+    {src: '/buy:sell-regular-shares.png'},
+    {src: '/confirm_bid_order.png'},
+    {src: '/ask-order_wireframe.png'},
+    {src: '/advanced-setting_wireframe.png'},
+    {src: '/IPO_purchase-form.png'},
+    {src: '/IPO_purchase-form_error.png'},
+    {src: '/incomplete-profile-prompt.png'},
+    {src: '/heropage-statistics_wireframe.png'},
+    {src: '/blog-card.png'},
+    {src: '/blog-card_horizontal.png'},
+    {src: '/more-articles.png'},
+    {src: '/more-articles_mobile.png'},
+
+    {src: '/blog-footer.png'},
+    
     {src: '/6.png'},
     {src: '/9.png'},
     {src: '/5.png'},
@@ -45,7 +70,13 @@ export default function Home() {
     {src: '/1.png'},
     {src: '/2.png'},
     {src: '/7.png'},
-    
+    {src: '/12.png'},
+    {src: '/13.png'},
+    {src: '/14.png'},
+    {src: '/15.png'},
+    {src: '/16.png'},
+    {src: '/17.png'},
+    {src: '/18.png'},
     
     
   ];
@@ -66,7 +97,7 @@ export default function Home() {
 
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View frontend code</a><br></br>
           <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View other code</a><br></br>
-        <p className={styles['hover-txt']} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>View most recent work</p>
+        <p className={styles['hover-txt']} onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
         {/* <Link href="">
         <p className={styles['hover-txt']} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>view project code</p>
         </Link> */}
@@ -75,39 +106,24 @@ export default function Home() {
                 {/* {loopArray.map((i, indx)=> 
                 <div style={{ 'backgroundImage': `url(/${indx}.png)`, minHeight: '100%', backgroundRepeat: 'no-repeat' }}></div>
                 )} */}
-                        <ReactImageCarouselViewer
+                        {/* <ReactImageCarouselViewer
           open={isOpen}
           onClose={() => setIsOpen(false)}
           images={images}
           startIndex={index}
-        />
-        {/* <Slide> */}
-        {/* </Slide> */}
-          {/* <div style={{display: 'flex'}}>
-            <Image src="/1.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/2.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/3.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/4.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/5.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/6.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/7.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/8.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/9.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/10.png" width={500} height={500} alt="portfolio pic"></Image>
-            <Image src="/11.png" width={500} height={500} alt="portfolio pic"></Image>
-          </div> */}
-        {/* <animated.div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '2rem', marginTop: '3rem', justifyContent: 'center', textAlign: 'center'}}> */}
-          {/* <Links></Links> */}
-            {/* <a target='0' href="/me.cv.pdf" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View CV</a><br></br>
-          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats1.svg" alt="me" width="467" height="195"/> */}
-          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats2.svg" alt="me" width="467" height="195"/> */}
-          {/* <Image className={styles.githubStat} sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="/stats3.svg" alt="me" width="467" height="195"/> */}
-          {/* <a href="https://github.com/Haeven" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>subhire.app</a> */}
-          {/* <Image sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="https://github-readme-streak-stats.herokuapp.com/?user=Haeven&theme=react&hide_border=true" alt="me" width="467" height="195"/>*/}
-          {/* <Image sizes={'(max-width: 768px) 100vw, auto (max-width: 1200px) 467px, 195px'} src="https://github-readme-stats.vercel.app/api/top-langs/?username=Haeven&theme=react&show_icons=true&hide_border=true&layout=compact" alt="me" width="467" height="195"/>  */}
-        {/* </animated.div> */}
+        /> */}
         
       </div>
+                
+      {isOpen && <Carousel showArrows={true} useKeyboardArrows={true}>
+          
+          {images.map(i => 
+          <div className="slide">
+            <img style={{maxHeight: '45rem', width: 'auto', maxWidth:'70%'}} key={i.src} src={i.src} />
+          </div>
+          ) }
+  
+    </Carousel>}
     </>
   )
 }
