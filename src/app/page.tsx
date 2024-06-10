@@ -129,7 +129,7 @@ export default function Home() {
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
       spaceBetween={50}
-      style={{marginTop: '11rem', position: 'relative', overflow: 'default'}}
+      style={{marginTop: '12rem', position: 'relative', overflow: 'default'}}
       slidesPerView={1}
       navigation
       zoom={true}
