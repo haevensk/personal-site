@@ -29,15 +29,15 @@ export default function Links() {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set([
-        ['https://x.com/hvndevs', 'Follow on 𝕏'],
+        ['https://x.com/havnelias', 'Follow on 𝕏'],
     ]), 300))
     ref.current.push(setTimeout(() => set([
-        ['https://x.com/hvndevs', 'Follow on 𝕏'],]), 800))
+        ['https://x.com/havnelias', 'Follow on 𝕏'],]), 800))
     }, [])
     ref.current.push(setTimeout(() => set([
         ['me.cv.pdf', 'View CV'],
         ['https://github.com/Haeven', 'View GitHub'],
-  ['https://x.com/haduelias', 'Follow on 𝕏'],
+  ['https://x.com/havnelias', 'Follow on 𝕏'],
   ['mailto:haevendevs@gmail.com?subject=👋%20Let%27s%20Connect!', 'Contact Email'],
   ['sms:+16082082300?body=👋%20Let%27s%20Connect!', 'Contact SMS'],
 ]), 8000))
