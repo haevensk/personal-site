@@ -35,7 +35,7 @@ export default function Home() {
   useEffect(() => {
     if (!initialLoad)
       var typed = new Typed('#typed', {
-        strings: ['Engineer. Designer. Creative.', 'Student. Mentor. Leader.', ' Husband. Brother. Friend.'],
+        strings: ['Engineer. Designer. Creative.', 'Student. Mentor. Leader.', ' Husband. Father. Friend.'],
         typeSpeed: 90
       });
 
