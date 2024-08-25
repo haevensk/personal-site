@@ -5,8 +5,9 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Zoom } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import images from "../assets/images.json"
 
-// Import Swiper styles
+// Import Swiper package styles
 import 'swiper/css';
 import 'swiper/css/zoom';
 import 'swiper/css/navigation';
@@ -19,54 +20,17 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (!initialLoad)
+    if (!initialLoad) {
       var typed = new Typed('#typed', {
-        strings: ['Engineer. Designer. Creative.', 'Student. Mentor. Leader.', ' Husband. Father. Friend.'],
+        strings: ['Engineer. Designer. Problem-solver.', 'Student. Mentor. Leader.', 'Husband. Brother. Friend.'],
         typeSpeed: 90
       });
 
       setInitialLoad(true);
+    } else {
+      setTimeout(() => setInitialLoad(false), 20000)
+    }
   }, [setInitialLoad, initialLoad]);
-  const images = [
-    {src: '/auctions.png'},
-    {src: '/wallet.png'},
-    {src: '/wallet_add-card.png'},
-    {src: '/onboarding.png'},
-    {src: '/FAQ.png'},
-    {src: '/our-process.png'},
-    {src: '/asset-statistics.png'},
-    {src: '/recent-trades-desktop.png'},
-    {src: '/recent-trades-mobile.png'},
-    {src: '/asset_cardx2.png'},
-    {src: '/regular-shares_trade-form_wireframe.png'},
-    {src: '/order-summary.png'},
-    {src: '/buy:sell-regular-shares.png'},
-    {src: '/confirm_bid_order.png'},
-    {src: '/ask-order_wireframe.png'},
-    {src: '/advanced-setting_wireframe.png'},
-    {src: '/IPO_purchase-form.png'},
-    {src: '/IPO_purchase-form_error.png'},
-    {src: '/incomplete-profile-prompt.png'},
-    {src: '/heropage-statistics_wireframe.png'},
-    {src: '/blog-card.png'},
-    {src: '/blog-card_horizontal.png'},
-    {src: '/blog-footer.png'},
-    {src: '/6.png'},
-    {src: '/9.png'},
-    {src: '/5.png'},
-    {src: '/3.png'},
-    {src: '/8.png'},
-    {src: '/4.png'},
-    {src: '/2.png'},
-    {src: '/7.png'},
-    {src: '/12.png'},
-    {src: '/13.png'},
-    {src: '/14.png'},
-    {src: '/15.png'},
-    {src: '/16.png'},
-    {src: '/17.png'},
-    {src: '/18.png'},  
-  ];
 
   return (
     <>
@@ -77,21 +41,21 @@ export default function Home() {
     </div>
       <div className={styles.wrapper}>
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '3rem'}}>
-          <a target='0' href="/resume.pdf" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Download resume</a><br></br>
           <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>LinkedIn</a><br></br>
-          <a target='0' href="https://www.instagram.com/havnelias" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Instagram</a><br></br>
           <a target='0' href="https://x.com/havnelias" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
-          <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View frontend code</a><br></br>
-          <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View other code</a><br></br>
+          <a target='0' href="/resume.pdf" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Download Resume</a><br></br>
+          <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', textDecoration: 'underline'}}>View Frontend Code</a><br></br>
+          <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', marginTop: '-20px',textDecoration: 'underline'}}>View Other Code </a><br></br>
           <p className={styles['hover-txt']} onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
         </div>
       </div>
+
       {isOpen &&
         <>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
             spaceBetween={50}
-            style={{marginTop: '14rem', position: 'relative', overflow: 'default'}}
+            style={{ position: 'relative', overflow: 'default'}}
             slidesPerView={1}
             navigation
             zoom={true}
