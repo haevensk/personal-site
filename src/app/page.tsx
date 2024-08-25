@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Zoom } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ReactModal from 'react-modal';
+import { Audio } from 'react-loader-spinner';
 import images from "../assets/images.json"
 import articles from "../assets/articles.json"
 import flags from "../flags"
@@ -21,6 +22,12 @@ import 'swiper/css'
 export default function Home() {
   const [initialLoad, setInitialLoad] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const delaySetIsOpen = (value) => {
+    setModalIsOpen(true)
+    setTimeout(() => setIsOpen(value), 2000)
+  }
 
   useEffect(() => {
     if (!initialLoad)
@@ -50,7 +57,7 @@ export default function Home() {
           <a target='0' href="/resume.pdf" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Download Resume</a><br></br>
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', textDecoration: 'underline'}}>View Frontend Code</a><br></br>
           <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', marginTop: '-25px',textDecoration: 'underline'}}>View Other Code</a><br></br>
-          <p className={styles['hover-txt']} onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
+          <p className={styles['hover-txt']} onClick={() => delaySetIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
         </div>
       </div>
       {flags.enableBlog &&
@@ -67,10 +74,18 @@ export default function Home() {
 
       <ReactModal
 
-      isOpen={isOpen}>
+      isOpen={modalIsOpen}>
         <>
-        <span onClick={() => setIsOpen(false)}><img src="/close_icon.svg" className={styles['close-icon']} width={'50px'} height={'50px'} style={{transform: ''}}></img></span>
-          <Swiper
+        <span onClick={() => {setModalIsOpen(false); setIsOpen(false)}}><img src="/close_icon.svg" className={styles['close-icon']} width={'50px'} height={'50px'} style={{transform: ''}}></img></span>
+        {!isOpen && <Audio
+  height="80"
+  width="80"
+  radius="9"
+  color="black"
+  ariaLabel="loading"
+  wrapperStyle={{justifyContent: 'center', marginTop: '15vh'}}
+/>}
+          {isOpen && <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
             spaceBetween={50}
             style={{ position: 'relative', overflow: 'default'}}
@@ -87,7 +102,7 @@ export default function Home() {
                 <img style={{maxHeight: '45rem', width: 'auto', maxWidth:'80%'}} key={i.src} src={i.src} />
                 </SwiperSlide>
             ) }
-          </Swiper>
+          </Swiper>}
         </>
         </ReactModal>
     </>
