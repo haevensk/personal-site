@@ -7,6 +7,8 @@ import { Navigation, Pagination, Scrollbar, A11y, Zoom } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ReactModal from 'react-modal';
 import images from "../assets/images.json"
+import articles from "../assets/articles.json"
+import flags from "../flags"
 
 // Import Swiper package styles
 import 'swiper/css';
@@ -38,7 +40,7 @@ export default function Home() {
     <>
     <div className={styles.typedContainer} style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '3rem'}}>
       <span>
-        <span id="typed" className={styles.typed} />
+        <span id="typed" className={styles.typed}>&ensp;</span>
       </span>
     </div>
       <div className={styles.wrapper}>
@@ -51,8 +53,17 @@ export default function Home() {
           <p className={styles['hover-txt']} onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
         </div>
       </div>
-
-      <div></div>
+      {flags.enableBlog &&
+      <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '10vw', gap: '40px'}}>
+        <h1 style={{fontSize: '50px'}}>Blog</h1>
+        <div style={{display: 'flex', flexDirection: 'column',gap: '20px', paddingRight: '50px'}}>
+          {articles.map(art => {
+            return <div style={{cursor: 'pointer', height: '125px', border: '1px solid white', padding: '20px', borderRadius: '10px'}}>
+              <p>{art.title} ...</p>
+            </div>
+          })}
+        </div>
+      </div>}
 
       <ReactModal
 
