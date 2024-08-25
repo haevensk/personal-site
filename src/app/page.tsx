@@ -81,7 +81,7 @@ export default function Home() {
               width="80"
               color="black"
               ariaLabel="loading"
-              wrapperStyle={{justifyContent: 'center', marginTop: '20vh'}}
+              wrapperStyle={{justifyContent: 'center', marginTop: '25vh'}}
             />
           }
 
