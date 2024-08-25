@@ -5,6 +5,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Zoom } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ReactModal from 'react-modal';
 import images from "../assets/images.json"
 
 // Import Swiper package styles
@@ -51,8 +52,13 @@ export default function Home() {
         </div>
       </div>
 
-      {isOpen &&
+      <div></div>
+
+      <ReactModal
+
+      isOpen={isOpen}>
         <>
+        <span onClick={() => setIsOpen(false)}><img src="/close_icon.svg" className={styles['close-icon']} width={'50px'} height={'50px'} style={{transform: ''}}></img></span>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
             spaceBetween={50}
@@ -72,7 +78,7 @@ export default function Home() {
             ) }
           </Swiper>
         </>
-      }
+        </ReactModal>
     </>
   )
 }

@@ -118,3 +118,12 @@ opacity: 1;
   transition: transform 0.5s;
   transform: scale(1.1);
 }
+
+.close-icon {
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+  transform: scale(1);
+}
+.close-icon:hover {
+  transform: scale(1.2);
+}
