@@ -106,3 +106,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.swiper-button-next, .swiper-button-prev {
+  color: black !important;
+}
