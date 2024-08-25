@@ -80,7 +80,6 @@ export default function Home() {
         {!isOpen && <Audio
   height="80"
   width="80"
-  radius="9"
   color="black"
   ariaLabel="loading"
   wrapperStyle={{justifyContent: 'center', marginTop: '15vh'}}
