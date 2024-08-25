@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <>
-    <div className={styles.typedContainer} style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '3rem'}}>
+    <div className={styles.typedc} style={{margin: 'auto', width: '100%', justifyContent: 'center', display: 'flex', marginTop: '3rem'}}>
       <span>
         <span id="typed" className={styles.typed}>&ensp;</span>
       </span>
@@ -56,7 +56,7 @@ export default function Home() {
           <a target='0' href="https://x.com/havnelias" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
           <a target='0' href="/resume.pdf" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Download Resume</a><br></br>
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', textDecoration: 'underline'}}>View Frontend Code</a><br></br>
-          <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/day%2001/solution-1.py" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', marginTop: '-25px',textDecoration: 'underline'}}>View Other Code</a><br></br>
+          <a target='0' href="https://github.com/Haeven/advent-of-code/blob/main/2023/" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', marginTop: '-25px',textDecoration: 'underline'}}>View Other Code</a><br></br>
           <p className={styles['hover-txt']} onClick={() => delaySetIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p>
         </div>
       </div>
