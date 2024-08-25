@@ -72,18 +72,19 @@ export default function Home() {
         </div>
       </div>}
 
-      <ReactModal
-
-      isOpen={modalIsOpen}>
+      <ReactModal isOpen={modalIsOpen}>
         <>
-        <span onClick={() => {setModalIsOpen(false); setIsOpen(false)}}><img src="/close_icon.svg" className={styles['close-icon']} width={'50px'} height={'50px'} style={{transform: ''}}></img></span>
-        {!isOpen && <Audio
-  height="80"
-  width="80"
-  color="black"
-  ariaLabel="loading"
-  wrapperStyle={{justifyContent: 'center', marginTop: '15vh'}}
-/>}
+          <span onClick={() => {setModalIsOpen(false); setIsOpen(false)}}><img src="/close_icon.svg" className={styles['close-icon']} width={'50px'} height={'50px'} style={{transform: ''}}></img></span>
+
+          {!isOpen && <Audio
+              height="80"
+              width="80"
+              color="black"
+              ariaLabel="loading"
+              wrapperStyle={{justifyContent: 'center', marginTop: '20vh'}}
+            />
+          }
+
           {isOpen && <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
             spaceBetween={50}
