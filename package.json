@@ -15,8 +15,6 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-image-carousel-viewer": "^0.0.11",
-    "react-responsive-carousel": "^3.2.23",
     "swiper": "^11.1.4",
     "typed.js": "^2.1.0"
   },
