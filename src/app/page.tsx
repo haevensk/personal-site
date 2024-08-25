@@ -20,16 +20,17 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (!initialLoad) {
+    if (!initialLoad)
+      // {
       var typed = new Typed('#typed', {
         strings: ['Engineer. Designer. Problem-solver.', 'Student. Mentor. Leader.', 'Husband. Brother. Friend.'],
         typeSpeed: 90
       });
 
       setInitialLoad(true);
-    } else {
-      setTimeout(() => setInitialLoad(false), 20000)
-    }
+    // } else {
+    //   setTimeout(() => setInitialLoad(false), 20000)
+    // }
   }, [setInitialLoad, initialLoad]);
 
   return (
