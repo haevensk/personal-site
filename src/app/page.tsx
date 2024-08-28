@@ -53,7 +53,7 @@ export default function Home() {
       <div className={styles.wrapper}>
         <div style={{margin: 'auto', display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '3rem'}}>
           <a target='0' href="https://linkedin.com/in/haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>LinkedIn</a><br></br>
-          <a target='0' href="https://github.com/Haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Github</a><br></br>
+          <a target='0' href="https://github.com/Haeven" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>View GitHub</a><br></br>
           <a target='0' href="https://x.com/havnelias" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Follow on 𝕏</a><br></br>
           <a target='0' href="/resume.pdf" style={{textDecoration: 'none', textAlign: 'center', color: '#9E9E9E', cursor: 'pointer'}}>Download Resume</a><br></br>
           <a target='0' href="https://github.com/Haeven/rares-ui-library/blob/main/src/lib/components/" style={{textAlign: 'center', color: '#9E9E9E', cursor: 'pointer', textDecoration: 'underline'}}>View Frontend Code</a><br></br>
