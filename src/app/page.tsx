@@ -33,7 +33,7 @@ export default function Home() {
     if (!initialLoad)
       // {
       var typed = new Typed('#typed', {
-        strings: ['Engineer. Designer. Problem-solver.', 'Student. Mentor. Leader.', 'Husband. Brother. Friend.'],
+        strings: ['Engineer. Architect. Problem-solver.', 'Student. Mentor. Leader.', 'Husband. Brother. Friend.'],
         typeSpeed: 90
       });
 
