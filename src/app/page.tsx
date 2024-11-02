@@ -184,7 +184,17 @@ export default function Home() {
             View Other Code
           </a>
           <br></br>
-          {/* <p className={styles['hover-txt']} onClick={() => delaySetIsOpen(!isOpen)} style={{ cursor: 'pointer',marginLeft: 'auto', marginRight: 'auto', }}>{isOpen ? 'Hide most recent work' : 'View most recent work'}</p> */}
+          <p
+            className={styles["hover-txt"]}
+            onClick={() => delaySetIsOpen(!isOpen)}
+            style={{
+              cursor: "pointer",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            {isOpen ? "Hide most recent work" : "View most recent work"}
+          </p>
         </div>
       </div>
       {flags.enableBlog && (
