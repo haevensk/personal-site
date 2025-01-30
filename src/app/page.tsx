@@ -50,9 +50,9 @@ export default function Home() {
       // {
       var typed = new Typed("#typed", {
         strings: [
-          "Engineer. Architect. Designer.",
-          "Mentor. Student. Leader.",
-          "Husband. Brother. Friend.",
+          "Engineer. Designer. Creator.",
+          "Leader. Mentor. Student.",
+          "Brother. Disciple. Friend.",
         ],
         typeSpeed: 90,
       });
