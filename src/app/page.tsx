@@ -120,7 +120,7 @@ export default function Home() {
           <br></br>
           <a
             target="0"
-            href="https://github.com/haevendkelley"
+            href="https://github.com/haevensd"
             style={{
               textDecoration: "none",
               textAlign: "center",
@@ -133,7 +133,7 @@ export default function Home() {
           <br></br>
           <a
             target="0"
-            href="https://x.com/haevenkelley"
+            href="https://x.com/haevensd"
             style={{
               textDecoration: "none",
               textAlign: "center",
