@@ -52,7 +52,7 @@ export default function Home() {
         strings: [
           "Engineer. Designer. Creator.",
           "Leader. Mentor. Student.",
-          "Brother. Disciple. Friend.",
+          "Brother. Friend. Disciple.",
         ],
         typeSpeed: 90,
       });
