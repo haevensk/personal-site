@@ -159,7 +159,7 @@ export default function Home() {
           <br></br>
           <a
             target="0"
-            href="https://github.com/haevendkelley/rares-ui-library/blob/main/src/lib/components/"
+            href="https://github.com/haevensd/rares-ui-library/blob/main/src/lib/components/"
             style={{
               textAlign: "center",
               color: "#9E9E9E",
@@ -172,7 +172,7 @@ export default function Home() {
           <br></br>
           <a
             target="0"
-            href="https://github.com/haevendkelley/advent-of-code/blob/main/2023/"
+            href="https://github.com/haevensd/advent-of-code/blob/main/2023/"
             style={{
               textAlign: "center",
               color: "#9E9E9E",
