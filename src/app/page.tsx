@@ -167,22 +167,10 @@ export default function Home() {
               textDecoration: "underline",
             }}
           >
-            View Frontend Code
+            View Code
           </a>
           <br></br>
-          <a
-            target="0"
-            href="https://github.com/haevensd/advent-of-code/blob/main/2023/"
-            style={{
-              textAlign: "center",
-              color: "#9E9E9E",
-              cursor: "pointer",
-              marginTop: "-25px",
-              textDecoration: "underline",
-            }}
-          >
-            View Other Code
-          </a>
+         
           <br></br>
           <p
             className={styles["hover-txt"]}
